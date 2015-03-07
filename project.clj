@@ -1,6 +1,6 @@
 (defproject tb.modules "0.1.0-SNAPSHOT"
   :description "Utility modules as a library/service"
-  :url "http://engineering.travelbird.com/open-source"
+  :url "http://engineering.travelbird.com/open-source/modular"
   :license {:name "MIT"
             :url "http://github.com/travelbird/modular/tree/master/LICENCE"}
   :dependencies [
@@ -14,8 +14,10 @@
           [ring "1.3.2"]
           [com.taoensso/timbre "3.3.1-1cd4b70" :exclusions [org.clojure/tools.reader]]
           [cheshire "5.4.0"]
+          [prismatic/schema "0.4.0"]
+          [eu.bitwalker/UserAgentUtils "1.15"]
           ]
-  :main ^:skip-aot tb.modules
+  :main ^:skip-aot tb.main
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}
             :dev {:plugins [[lein-midje "3.1.3"]]

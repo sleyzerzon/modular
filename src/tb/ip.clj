@@ -1,5 +1,7 @@
-(ns tb.modules
-  (:gen-class))
+(ns tb.ip
+  ; (:use [clojure.core.memoize :only [memo]])
+  ; (:require )
+  )
 
 
 (def db (java.io.File. "/opt/geoip2/GeoLite2-City.mmdb"))
@@ -14,9 +16,3 @@
       :city (.getName (.getCity response))}
     )
   )
-
-(defn -main
-  "I don't do a whole lot ... yet."
-  [& args]
-  (println "Hello, World!")
-  (println (get-country (first args))))
