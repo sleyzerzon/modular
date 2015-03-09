@@ -9,7 +9,6 @@
           [org.clojure/core.memoize "0.5.6"]
           [com.stuartsierra/component "0.2.3"]
           [com.maxmind.geoip2/geoip2 "2.1.0"]
-
           [compojure "1.3.1"]
           [ring "1.3.2"]
           [com.taoensso/timbre "3.3.1-1cd4b70" :exclusions [org.clojure/tools.reader]]
