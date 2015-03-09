@@ -1,6 +1,6 @@
-(ns tb.modules-test
+(ns tb.main-test
   (:require [clojure.test :refer :all]
-            [tb.modules :refer :all]))
+            [tb.main :refer :all]))
 
 (deftest a-test
   (testing "FIXME, I fail."
