@@ -11,7 +11,7 @@
     [compojure.route                        :as route]
     [cheshire.core                          :refer :all]
     [taoensso.timbre                        :as timbre
-         :refer (log  trace  debug  info  warn  error  fatal  report sometimes)]))
+         :refer (log trace debug info warn error fatal report sometimes)]))
 
 (defn wrap-json-response
   "Middleware that converts responses with a map for a body into a JSON

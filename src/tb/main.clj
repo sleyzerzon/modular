@@ -6,8 +6,7 @@
     [tb.ip                                  :refer [ip-component]]
     [tb.http                                :refer [http-server]]
     [taoensso.timbre                        :as timbre
-         :refer (log  trace  debug  info  warn  error  fatal  report sometimes)]
-    )
+         :refer (log trace debug info warn error fatal report sometimes)])
   (:gen-class))
 
 (defn app-system 
@@ -36,5 +35,4 @@
       (System/exit 0))
 
     (let [sys (component/start (app-system options))]
-        (info "System started..")
-      )))
+        (info "System started.."))))

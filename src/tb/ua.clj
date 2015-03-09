@@ -5,7 +5,7 @@
   (:require 
     [com.stuartsierra.component             :as component]
     [taoensso.timbre                        :as timbre
-         :refer (log  trace  debug  info  warn  error  fatal  report sometimes)])
+         :refer (log trace debug info warn error fatal report sometimes)])
 
   (:import [eu.bitwalker.useragentutils UserAgent DeviceType Browser OperatingSystem]))
 
