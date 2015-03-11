@@ -1,6 +1,9 @@
 # tb.modules
 
-FIXME: description
+[![License](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://tldrlegal.com/license/mit-license)
+[![Build Status](https://api.travis-ci.org/travelbird/modular.svg)](https://travis-ci.org/travelbird/modular)
+
+Utility modules; user agent parsing, ip to country lookup
 
 ## Installation
 
@@ -14,19 +17,8 @@ FIXME: explanation
 
 ## Options
 
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
+--port PORT  
+--ipdb LOCATION  
 
 ## License
 

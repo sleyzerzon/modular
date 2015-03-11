@@ -1,4 +1,4 @@
-(ns tb.main
+(ns tb.modules.main
   (:require 
     [clojure.tools.cli                      :refer [parse-opts]]
     [com.stuartsierra.component             :as component]

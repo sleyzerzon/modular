@@ -1,4 +1,4 @@
-(ns tb.ip
+(ns tb.modules.ip
   "Uses MaxMind mmdb file to resolve IP addresses location. "
   (:require 
     [com.stuartsierra.component             :as component]

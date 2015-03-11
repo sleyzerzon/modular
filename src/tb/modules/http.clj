@@ -1,4 +1,4 @@
-(ns tb.http
+(ns tb.modules.http
   "HTTP Interface to available modules so that 
   could be used a service as well"
   (:require 

@@ -1,4 +1,4 @@
-(ns tb.ua
+(ns tb.modules.ua
   "User Agent utilities. Converts a User-Agent string into humanly readable 
   parts. Like Browser, Operating System, Device."
   (:use [clojure.core.memoize :only [memo]])
@@ -15,9 +15,9 @@
   [string]
   (try
     (let [user-agent (UserAgent. (or string ""))]
-      {:browser_group (-> user-agent .getBrowser .getGroup .getName)
-       :os_group (-> user-agent .getOperatingSystem .getGroup .getName)
-       :device_type (-> user-agent .getOperatingSystem .getDeviceType .getName)})
+      {:browser (-> user-agent .getBrowser .getGroup .getName)
+       :os (-> user-agent .getOperatingSystem .getGroup .getName)
+       :device (-> user-agent .getOperatingSystem .getDeviceType .getName)})
     (catch Exception e
       (error (str "Could not derive the user-agent from " string) e)
       (str->features nil)
@@ -27,9 +27,9 @@
 (def possible-features
   (memo 
     (fn []
-      {:os_group (set (map #(-> % .getGroup .getName) (OperatingSystem/values)))
-       :browser_group (set (map #(-> % .getGroup .getName) (Browser/values)))
-       :device_type (set (map #(.getName %) (DeviceType/values)))})))
+      {:os (set (map #(-> % .getGroup .getName) (OperatingSystem/values)))
+       :browser (set (map #(-> % .getGroup .getName) (Browser/values)))
+       :device (set (map #(.getName %) (DeviceType/values)))})))
 
 
 (defrecord UserAgents [ func ]
