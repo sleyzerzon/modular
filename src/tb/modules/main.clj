@@ -2,9 +2,9 @@
   (:require 
     [clojure.tools.cli                      :refer [parse-opts]]
     [com.stuartsierra.component             :as component]
-    [tb.ua                                  :refer [user-agents-component] :as ua]
-    [tb.ip                                  :refer [ip-component]]
-    [tb.http                                :refer [http-server]]
+    [tb.modules.ua                                  :refer [user-agents-component] :as ua]
+    [tb.modules.ip                                  :refer [ip-component]]
+    [tb.modules.http                                :refer [http-server]]
     [taoensso.timbre                        :as timbre
          :refer (log trace debug info warn error fatal report sometimes)])
   (:gen-class))

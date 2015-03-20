@@ -1,4 +1,4 @@
-(ns tb.modular.jdbc
+(ns tb.modules.jdbc
   (:require 
     [clojure.java.jdbc :as jdbc])
   )
