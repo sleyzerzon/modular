@@ -1,4 +1,4 @@
-(defproject tb.modules "0.1.0-SNAPSHOT"
+(defproject tb.modules "0.1.0"
   :description "Utility modules as a library/service"
   :url "http://engineering.travelbird.com/open-source/modular"
   :license {:name "MIT"
