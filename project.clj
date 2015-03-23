@@ -19,6 +19,7 @@
           ]
   :main ^:skip-aot tb.modules.main
   :target-path "target/%s"
+  :uberjar-name "tb.modules.jar"
   :repositories {
     "conjars" "http://conjars.org/repo/"
     "sonatype-oss-public" "https://oss.sonatype.org/content/groups/public/"}
